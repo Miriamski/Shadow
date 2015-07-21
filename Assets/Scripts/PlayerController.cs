@@ -30,12 +30,9 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
-        grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
+		grounded = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground"));
 
-        if (Input.GetButtonDown("Jump") && grounded)
-        {
-            isJumping = true;
-        }
+		isJumping = (Input.GetButtonDown ("Jump") && grounded && !isHiding);
 
         isHiding = Input.GetButton("Fire1");
 
@@ -55,8 +52,9 @@ public class PlayerController : MonoBehaviour {
             Flip();
         }
 
-	    move ();
-        animate();
+		move ();
+		animate();
+        
 		
 
 	}
@@ -74,7 +72,6 @@ public class PlayerController : MonoBehaviour {
 			if (isJumping) 
             {
                 rb.AddForce(new Vector2(0f, jumpForce));
-                isJumping = false;
             }
 
             if (moveHorizontal * rb.velocity.x < maxSpeed)
@@ -94,9 +91,6 @@ public class PlayerController : MonoBehaviour {
 
 	void animate()
 	{
-
-	    animator.speed = Mathf.Abs(moveHorizontal);
-
 		if (moveHorizontal != 0) 
         {
 			animator.SetBool ("Walking", true);
@@ -116,11 +110,10 @@ public class PlayerController : MonoBehaviour {
 			random = Random.Range(1, 3);
 		}
 	    
-        //if(isJumping)
-        //{
-        //    animator.SetTrigger("Jump");
-            
-        //}
+        if(isJumping)
+       	{
+           animator.SetTrigger("Jump");            
+        }
         
         
 
