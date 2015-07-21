@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: 0f253a4f2da4c76468e3aaa5515a3c16
+timeCreated: 1437409160
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: CharacterHead
+    21300002: CharcterRightUpperArm
+    21300004: CharcterLeftUpperArm
+    21300006: CharacterBody
+    21300008: CharcterLeftElbow
+    21300010: CharkterRightElbow
+    21300012: CharcterLeftLowerArm
+    21300014: CharkterLeftKnee
+    21300016: CharcterRightKnee
+    21300018: CharcterRightLowerArm
+    21300020: CharcterLeftLeg
+    21300022: CharcterRightLeg
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: CharacterHead
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 1763
+        width: 710
+        height: 675
+      alignment: 9
+      pivot: {x: .39948678, y: .0443918183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CharcterRightUpperArm
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 1310
+        width: 266
+        height: 551
+      alignment: 9
+      pivot: {x: .269147605, y: .918674588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CharcterLeftUpperArm
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1268
+        width: 200
+        height: 486
+      alignment: 9
+      pivot: {x: .790436685, y: .950765967}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CharacterBody
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 173
+        width: 466
+        height: 1512
+      alignment: 9
+      pivot: {x: .471705109, y: .933126688}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CharcterLeftElbow
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1177
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CharkterRightElbow
+      rect:
+        serializedVersion: 2
+        x: 2281
+        y: 1180
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CharcterLeftLowerArm
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 698
+        width: 60
+        height: 446
+      alignment: 9
+      pivot: {x: .458457172, y: .961479723}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CharkterLeftKnee
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 649
+        width: 81
+        height: 151
+      alignment: 9
+      pivot: {x: .465576172, y: .6292575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CharcterRightKnee
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 730
+        width: 113
+        height: 170
+      alignment: 9
+      pivot: {x: .5, y: .600000024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CharcterRightLowerArm
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 712
+        width: 99
+        height: 432
+      alignment: 9
+      pivot: {x: .782862782, y: .963995218}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CharcterLeftLeg
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 21
+        width: 159
+        height: 603
+      alignment: 9
+      pivot: {x: .559294283, y: .966807902}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: CharcterRightLeg
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 18
+        width: 153
+        height: 621
+      alignment: 9
+      pivot: {x: .249538049, y: .967555344}
+      border: {x: 0, y: 0, z: 0, w: 2}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

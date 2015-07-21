@@ -1,2 +1,0 @@
-# Shadow
-Incredibly good game!
