@@ -3,3 +3,5 @@ Shadow-csharp.sln
 *.sln
 Shadow.userprefs
 *.meta
+Temp
+*.db

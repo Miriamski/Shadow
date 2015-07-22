@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour {
     private bool grounded = false;
     private float moveHorizontal;
     private int random = 1;
-    private bool isHiding;
+    [HideInInspector] public bool isHiding;
     private Rigidbody2D rb;
 
 	// Use this for initialization
@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour {
             if (moveHorizontal * rb.velocity.x < maxSpeed)
             {
                 rb.AddForce(Vector2.right * moveHorizontal * moveForce);
-            }
+            } 
 
             if (Mathf.Abs(rb.velocity.x) > maxSpeed)
             {
@@ -107,7 +107,7 @@ public class PlayerController : MonoBehaviour {
         else 
         {
 			animator.SetInteger ("ShutEyes", 0);
-			random = Random.Range(1, 3);
+			random = Random.Range(1, 5);
 		}
 	    
         if(isJumping)
