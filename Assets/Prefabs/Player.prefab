@@ -494,6 +494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facingLeft: 1
   isJumping: 0
+  dead: 0
   moveForce: 700
   maxSpeed: 50
   jumpForce: 5000

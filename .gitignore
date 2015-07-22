@@ -5,3 +5,4 @@ Temp
 *.csproj
 Assembly-CSharp-vs.csproj
 Assembly-CSharp.csproj
+_ReSharper.Shadow-csharp
