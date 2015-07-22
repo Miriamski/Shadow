@@ -96,11 +96,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 415292, guid: 634ac4825b4ad784f9bd20e4522501d8, type: 2}
       propertyPath: m_LocalPosition.x
-<<<<<<< HEAD
-      value: -150
-=======
-      value: -229.600006
->>>>>>> origin/master
+      value: -225.199997
       objectReference: {fileID: 0}
     - target: {fileID: 415292, guid: 634ac4825b4ad784f9bd20e4522501d8, type: 2}
       propertyPath: m_LocalPosition.y
@@ -128,7 +124,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 415292, guid: 634ac4825b4ad784f9bd20e4522501d8, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 634ac4825b4ad784f9bd20e4522501d8, type: 2}
@@ -260,7 +256,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 705236355}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -179.806061, y: 2.5999999, z: 0}
+  m_LocalPosition: {x: -108.5, y: -1.89999998, z: 0}
   m_LocalScale: {x: 5.41002655, y: 5.41002655, z: 5.41002655}
   m_Children: []
   m_Father: {fileID: 767558980}
@@ -451,42 +447,11 @@ Transform:
   - {fileID: 767558980}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-<<<<<<< HEAD
 --- !u!4 &1953331211 stripped
 Transform:
   m_PrefabParentObject: {fileID: 442996, guid: 013d06240cf191b418aac6a1cfe3cb8e, type: 2}
   m_PrefabInternal: {fileID: 679358754}
 --- !u!1 &2017143625
-=======
---- !u!1 &1859614695
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1859614696}
-  m_Layer: 0
-  m_Name: emoty
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1859614696
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859614695}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.8411751, y: .906355858, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
---- !u!1 &1871393324
->>>>>>> origin/master
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}

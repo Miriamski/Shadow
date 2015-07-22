@@ -84,6 +84,10 @@ public class PlayerController : MonoBehaviour {
                 rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * maxSpeed, rb.velocity.y);
             }
 
+		} else
+		{
+            // stop immediatly if the character is Hiding
+		    rb.velocity = new Vector2(0, rb.velocity.y);
 		}
 
 
