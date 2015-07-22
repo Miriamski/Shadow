@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour {
 
 		isJumping = (Input.GetButtonDown ("Jump") && grounded && !isHiding);
 
-        isHiding = Input.GetButton("Fire1");
+		isHiding = (Input.GetAxis("Vertical") < 0);
 
 
 	}
