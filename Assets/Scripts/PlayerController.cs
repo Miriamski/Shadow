@@ -5,11 +5,12 @@ public class PlayerController : MonoBehaviour {
    
 	[HideInInspector] public bool facingLeft = true;
     [HideInInspector] public bool isJumping = false;
+	[HideInInspector] public bool dead = false;
 
     //restricted Speed and fixed Accelerations
     public float moveForce = 365f;
     public float maxSpeed = 5f;
-    public float jumpForce = 1000f;
+	public float jumpForce = 1000f;
     //fixed Speed and Jumpheight
     //public float speed;
     //public float jumpHeight;
@@ -90,6 +91,11 @@ public class PlayerController : MonoBehaviour {
 		    rb.velocity = new Vector2(0, rb.velocity.y);
 		}
 
+		if (dead) 
+		{
+			rb.velocity = new Vector2(0, 0);
+		}
+
 
 	}
 
@@ -119,6 +125,12 @@ public class PlayerController : MonoBehaviour {
            animator.SetTrigger("Jump");            
         }
         
+		if (dead) 
+		{
+			random = Random.Range(1, 2);
+			animator.SetInteger ("Dead", random);
+		}
+
         
 
 	}

@@ -87,6 +87,87 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &18305707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 18305708}
+  - 212: {fileID: 18305711}
+  - 61: {fileID: 18305710}
+  - 114: {fileID: 18305709}
+  m_Layer: 0
+  m_Name: tree_2 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &18305708
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 18305707}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 498.600006, y: -29.5, z: 0}
+  m_LocalScale: {x: 3.02722478, y: 3.02722478, z: 3.02722478}
+  m_Children: []
+  m_Father: {fileID: 767558980}
+  m_RootOrder: 4
+--- !u!114 &18305709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 18305707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abfe43caef52cb5429df0e114661e2c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1140029953}
+--- !u!61 &18305710
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 18305707}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 1.52587891e-05, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 16.710001, y: 26.9000015}
+--- !u!212 &18305711
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 18305707}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 0b54eae0d4a4cc64581831ec5e710b32, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &320923097 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 131196, guid: 634ac4825b4ad784f9bd20e4522501d8, type: 2}
@@ -102,6 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d2f11fb2a275a438dfff331dd0f03f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTimetraveling: 0
 --- !u!1001 &394249448
 Prefab:
   m_ObjectHideFlags: 0
@@ -331,6 +413,7 @@ Transform:
   - {fileID: 1384903531}
   - {fileID: 2017143626}
   - {fileID: 2135694950}
+  - {fileID: 18305708}
   m_Father: {fileID: 1757897707}
   m_RootOrder: 1
 --- !u!1001 &1048726135
@@ -370,7 +453,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 429808, guid: 26d1d458ceef77d448480fdca6e2aba3, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26d1d458ceef77d448480fdca6e2aba3, type: 2}
@@ -529,6 +612,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2135694950}
   - 212: {fileID: 2135694951}
+  - 61: {fileID: 2135694953}
+  - 114: {fileID: 2135694952}
   m_Layer: 0
   m_Name: tree_4
   m_TagString: Untagged
@@ -574,3 +659,28 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 49541d52e05bcad40a6f3d0452921fb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &2135694952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2135694949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abfe43caef52cb5429df0e114661e2c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1140029953}
+--- !u!61 &2135694953
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2135694949}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -7.62939453e-06, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 16.8500004, y: 30.3899975}
