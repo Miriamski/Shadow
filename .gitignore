@@ -2,3 +2,6 @@ Library
 *.sln
 Shadow.userprefs
 Temp
+*.csproj
+Assembly-CSharp-vs.csproj
+Assembly-CSharp.csproj
