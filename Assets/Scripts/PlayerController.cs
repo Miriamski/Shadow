@@ -29,19 +29,20 @@ public class PlayerController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-
-
-	}
-
-	void FixedUpdate () {
-
+	void Update () 
+    {
         grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 
         isJumping = (Input.GetButtonDown("Jump") && grounded && !isHiding);
 
         isHiding = (Input.GetAxis("Vertical") < 0);
-	
+
+        //Call jump from here since FixedUpdate's framerate is not frequent enough
+        jump();
+	}
+
+	void FixedUpdate () 
+    {
 		moveHorizontal = Input.GetAxis ("Horizontal");
 
         if (moveHorizontal < 0 && !facingLeft)
@@ -55,7 +56,6 @@ public class PlayerController : MonoBehaviour {
 
 		move ();
 		animate();
-
 	}
 
     void Flip()
@@ -64,16 +64,22 @@ public class PlayerController : MonoBehaviour {
         transform.localScale = new Vector3(transform.localScale.x*-1, transform.localScale.y, transform.localScale.z);    
     }
 
-	void move() 
-	{
-		if (!isHiding) 
+    void jump()
+    {
+        if (!isHiding)
         {
-			if (isJumping) 
+            if (isJumping)
             {
                 rb.AddForce(new Vector2(0f, jumpForce));
             }
+        }
+    }
 
-            if (moveHorizontal * rb.velocity.x < maxSpeed)
+    void move() 
+	{
+		if (!isHiding) 
+        {
+			if (moveHorizontal * rb.velocity.x < maxSpeed)
             {
                 rb.AddForce(Vector2.right * moveHorizontal * moveForce);
             } 
