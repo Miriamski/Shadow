@@ -8,7 +8,7 @@ public class gamestate : MonoBehaviour {
 	// Declare properties
 	private static gamestate instance;
 	private string activeLevel;			// Active level
-	private string name;				// Characters name
+	private string cname;				// Characters name
 	private int deaths;					// # deaths
 
 	// ---------------------------------------------------------------------------------------------------
@@ -46,7 +46,7 @@ public class gamestate : MonoBehaviour {
 
 		// Set default properties:
 		activeLevel = "Level 1";
-		name = "Joffrey";
+		cname = "Schwipps";
 		deaths = 0;
 
 		// Load level 1
@@ -82,7 +82,7 @@ public class gamestate : MonoBehaviour {
 	// ---------------------------------------------------------------------------------------------------
 	public string getName()
 	{
-		return name;
+		return cname;
 	}
 
 	// ---------------------------------------------------------------------------------------------------

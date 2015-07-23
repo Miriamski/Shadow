@@ -33,7 +33,7 @@ public class levelgui : MonoBehaviour {
 
 		// Output stats
 		GUI.Label(new Rect(30, 100, 400, 30), "Name: " + gamestate.Instance.getName());
-		GUI.Label(new Rect(30, 130, 400, 30), "HP: " + gamestate.Instance.getDeaths().ToString());
+		GUI.Label(new Rect(30, 130, 400, 30), "Deaths: " + gamestate.Instance.getDeaths().ToString());
 
 	}
 
