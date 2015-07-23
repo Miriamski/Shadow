@@ -30,17 +30,17 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
-		grounded = Physics2D.Linecast (transform.position, groundCheck.position, 1 << LayerMask.NameToLayer ("Ground"));
-
-		isJumping = (Input.GetButtonDown ("Jump") && grounded && !isHiding);
-
-		isHiding = (Input.GetAxis("Vertical") < 0);
 
 
 	}
 
 	void FixedUpdate () {
+
+        grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
+
+        isJumping = (Input.GetButtonDown("Jump") && grounded && !isHiding);
+
+        isHiding = (Input.GetAxis("Vertical") < 0);
 	
 		moveHorizontal = Input.GetAxis ("Horizontal");
 
@@ -55,8 +55,6 @@ public class PlayerController : MonoBehaviour {
 
 		move ();
 		animate();
-        
-		
 
 	}
 
