@@ -11,7 +11,7 @@ public class PlayerEntersCabinetBehaviour : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        timetraveling = false;
     }
 
     // Update is called once per frame
@@ -30,7 +30,7 @@ public class PlayerEntersCabinetBehaviour : MonoBehaviour
     {
         if(timetraveling)
         {
-            animator.SetBool("Timetraveling", true);
+            animator.Play("Enter Cabinet");
         }
     }
 
@@ -42,6 +42,11 @@ public class PlayerEntersCabinetBehaviour : MonoBehaviour
     public void SetInReach(bool isInReach)
     {
         inReach = isInReach;
+    }
+
+    public bool GetTimetraveling()
+    {
+        return timetraveling;
     }
 
 }

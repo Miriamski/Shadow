@@ -4,17 +4,28 @@ using System.Collections;
 public class EnterCabinetColliderController : MonoBehaviour 
 {
     public GameObject player;
+    //private MonoBehaviour playerBehaveiour;
+    public Animator animator;
 
 	// Use this for initialization
-	void Start () {
-	
+	void Awake ()
+	{
+	    
 	}
 	
 	// Update is called once per frame
-	void Update () 
-    {
-	
+	void Update ()
+	{
+	    Animate();
 	}
+
+    private void Animate()
+    {
+        if (player.GetComponent<PlayerEntersCabinetBehaviour>().GetTimetraveling())
+        {
+            animator.SetBool("isOpen",false);
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D invader)
     {

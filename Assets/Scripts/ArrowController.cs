@@ -5,15 +5,15 @@ public class ArrowController : MonoBehaviour
 {
     private Animator animator;
     private GameObject player;
-    private SpriteRenderer renderer;
+    private SpriteRenderer arrowSpriteRenderer;
     private bool inReach;
 
-    void Start()
+    void Awake()
     {
         player = GetComponentInParent<EnterCabinetColliderController>().player;
         animator = GetComponent<Animator>();
-        renderer = GetComponent<SpriteRenderer>();
-        renderer.enabled = false;
+        arrowSpriteRenderer = GetComponent<SpriteRenderer>();
+        arrowSpriteRenderer.enabled = false;
         inReach = false;
     }
 
@@ -22,11 +22,11 @@ public class ArrowController : MonoBehaviour
         inReach = player.GetComponent<PlayerEntersCabinetBehaviour>().GetInReach();
         if(inReach)
         {
-            renderer.enabled = true;
+            arrowSpriteRenderer.enabled = true;
         }
         else
         {
-            renderer.enabled = false;
+            arrowSpriteRenderer.enabled = false;
         }
     }
     
