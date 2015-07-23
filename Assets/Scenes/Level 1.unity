@@ -283,7 +283,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!114 &548185278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -469,6 +469,22 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 100886, guid: 26d1d458ceef77d448480fdca6e2aba3, type: 2}
   m_PrefabInternal: {fileID: 1048726135}
+--- !u!1 &1151792797 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 131196, guid: 634ac4825b4ad784f9bd20e4522501d8, type: 2}
+  m_PrefabInternal: {fileID: 90629901}
+--- !u!114 &1151792800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1151792797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564abe9bd6322bc41a43e19f36141e3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1140029953}
 --- !u!1 &1384903530
 GameObject:
   m_ObjectHideFlags: 0

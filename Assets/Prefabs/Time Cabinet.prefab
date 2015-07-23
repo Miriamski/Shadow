@@ -58,6 +58,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 409334}
   - 61: {fileID: 6123690}
+  - 114: {fileID: 11409852}
   m_Layer: 0
   m_Name: Enter Cabinet Collider
   m_TagString: TimeCabinetCollider
@@ -264,6 +265,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11409852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564abe9bd6322bc41a43e19f36141e3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &11459388
 MonoBehaviour:
   m_ObjectHideFlags: 1
