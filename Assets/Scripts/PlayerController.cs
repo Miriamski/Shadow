@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour {
 
         isJumping = (Input.GetButtonDown("Jump") && grounded && !isHiding);
 
-        isHiding = (Input.GetAxis("Vertical") < 0);
+	    isHiding = (Input.GetAxis("Vertical") < 0);
 
         //Call jump from here since FixedUpdate's framerate is not frequent enough
         jump();

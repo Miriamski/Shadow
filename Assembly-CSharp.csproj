@@ -48,9 +48,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Die.cs" />
-     <Compile Include="Assets\Scripts\EnterCabinetController.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerController_old.cs" />
+     <Compile Include="Assets\Scripts\PlayerEntersCabinetController.cs" />
      <Compile Include="Assets\Scripts\TimeCabinetContoller.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
