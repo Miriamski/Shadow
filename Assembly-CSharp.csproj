@@ -46,12 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ArrowController.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Die.cs" />
      <Compile Include="Assets\Scripts\EnterCabinetColliderController.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerController_old.cs" />
-     <Compile Include="Assets\Scripts\PlayerEntersCabinetController.cs" />
+     <Compile Include="Assets\Scripts\PlayerEntersCabinetBehaviour.cs" />
      <Compile Include="Assets\Scripts\TimeCabinetContoller.cs" />
      <Compile Include="Assets\Scripts\gamestart.cs" />
      <Compile Include="Assets\Scripts\gamestate.cs" />

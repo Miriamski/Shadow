@@ -21,7 +21,8 @@ public class EnterCabinetColliderController : MonoBehaviour
         //print(invader.tag);
         if (invader.CompareTag("Player"))
         {
-            player.GetComponent<PlayerEntersCabinetController>().isInReach = true;
+            player.GetComponent<PlayerEntersCabinetBehaviour>().SetInReach(true);
+
         }
     }
 
@@ -30,7 +31,7 @@ public class EnterCabinetColliderController : MonoBehaviour
         if (invader.CompareTag("Player"))
         {
 
-            player.GetComponent<PlayerEntersCabinetController>().isInReach = false;
+            player.GetComponent<PlayerEntersCabinetBehaviour>().SetInReach(false);
         }
     }
 }
