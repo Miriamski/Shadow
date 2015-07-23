@@ -211,6 +211,18 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1140029953}
+    - target: {fileID: 21223492, guid: 634ac4825b4ad784f9bd20e4522501d8, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432274, guid: 634ac4825b4ad784f9bd20e4522501d8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11441146, guid: 634ac4825b4ad784f9bd20e4522501d8, type: 2}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1454630680}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 634ac4825b4ad784f9bd20e4522501d8, type: 2}
   m_IsPrefabParent: 0
@@ -542,6 +554,11 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0b54eae0d4a4cc64581831ec5e710b32, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!95 &1454630680 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9528206, guid: 634ac4825b4ad784f9bd20e4522501d8,
+    type: 2}
+  m_PrefabInternal: {fileID: 90629901}
 --- !u!1 &1757897706
 GameObject:
   m_ObjectHideFlags: 0
