@@ -5,6 +5,7 @@ public class TimeCabinetContoller : MonoBehaviour
 {
     [HideInInspector] public bool isOpen = false;
     public Animator animator;
+    public float stepSize; 
 
     void OnTriggerEnter2D ( Collider2D invader)
     {
