@@ -39,7 +39,7 @@ public class PlayerEntersCabinetBehaviour : MonoBehaviour
 			Vector3 newPosition = gameObject.transform.position;
 			newPosition.y = invaded.transform.position.y 
 				- (invaded.GetComponent<BoxCollider2D> ().size.y) / 2f
-				+ (gameObject.GetComponent<BoxCollider2D> ().size.y) / 2f;
+				+ (gameObject.GetComponent<BoxCollider2D> ().size.y) * 0.8f;
 			// print(newPosition.y);
 			gameObject.transform.position = newPosition;
 			gameObject.GetComponent<PlayerController>().travelTime();
