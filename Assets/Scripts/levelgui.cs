@@ -33,7 +33,18 @@ public class levelgui : MonoBehaviour {
 
 		// Output stats
 		GUI.Label(new Rect(30, 100, 400, 30), "Name: " + gamestate.Instance.getName());
-		GUI.Label(new Rect(30, 130, 400, 30), "Deaths: " + gamestate.Instance.getDeaths().ToString());
+		GUI.Label(new Rect(30, 120, 400, 30), "Deaths: " + gamestate.Instance.getDeaths().ToString());
+
+		GameObject player = GameObject.Find("Player");
+		var playerState = player.GetComponent<PlayerController> ().state;
+		var rb = player.GetComponent<Rigidbody2D>();
+		GUI.Label(new Rect(30, 140, 600, 30), 
+		          "Player state: "+playerState.ToString()+
+		          ", v: " + rb.velocity + 
+		          ", pos: " + rb.transform.position +
+		          ", gravityScale: "+rb.gravityScale);
+
+		GUI.Label(new Rect(30, 160, 400, 30), "timetrvaeling: " + player.GetComponent<PlayerEntersCabinetBehaviour> ().timetraveling);
 
 	}
 

@@ -20,8 +20,9 @@ public class CameraController : MonoBehaviour {
 	void LateUpdate ()
 	{
 		transform.position = player.transform.position + offset;
+		var playerState = player.GetComponent<PlayerController> ().state;
 
-		if (HideAnimation && player.GetComponent<PlayerController> ().isHiding) {
+		if (HideAnimation && playerState == PlayerController.State.Hiding) {
 			//transform.Rotate (Vector3.forward * Time.deltaTime * 40);
 			cam.cullingMask = (1 << LayerMask.NameToLayer ("Player")) | (1 << LayerMask.NameToLayer("Black"));
 
@@ -30,7 +31,7 @@ public class CameraController : MonoBehaviour {
 			cam.cullingMask = oldMask;
 		}
 
-		if (transform.eulerAngles != new Vector3 (0,0,0) && !player.GetComponent<PlayerController> ().isHiding) 
+		if (transform.eulerAngles != new Vector3 (0,0,0) && playerState != PlayerController.State.Hiding)
 		{
 			transform.eulerAngles = new Vector3(0, 0, 0);
 		}

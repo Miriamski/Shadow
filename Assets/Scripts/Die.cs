@@ -9,7 +9,7 @@ public class Die : MonoBehaviour {
 	{
 		if( invader.gameObject.CompareTag("Player"))
 		{
-			player.GetComponent<PlayerController> ().dead = true;
+			player.GetComponent<PlayerController> ().die();
 		}
 	}
 }

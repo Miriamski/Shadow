@@ -17,7 +17,14 @@ public class PlayerEntersCabinetBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timetraveling = ((Input.GetAxis("Vertical") > 0) && inReach);
+		if (Input.GetKeyDown (KeyCode.UpArrow)) {
+			if (inReach) 
+				timetraveling = true;
+		}
+		if (Input.GetKeyUp (KeyCode.UpArrow)) {
+			timetraveling = false;
+			gameObject.GetComponent<PlayerController>().stopTravelingTime();
+		}
         //print(timetraveling);
     }
 
@@ -28,14 +35,15 @@ public class PlayerEntersCabinetBehaviour : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D invaded)
     {
-        
-        if (invaded.CompareTag("TimeCabinetCollider") && timetraveling)
-        {
-            Vector3 newPosition = gameObject.transform.position;
-            newPosition.y =  invaded.transform.position.y -(invaded.GetComponent<BoxCollider2D>().size.y)/2 + (gameObject.GetComponent<BoxCollider2D>().size.y) / 2;
-            print(newPosition.y);
-            gameObject.transform.position = newPosition;
-        }
+        if (invaded.CompareTag ("TimeCabinetCollider") && timetraveling) {
+			Vector3 newPosition = gameObject.transform.position;
+			newPosition.y = invaded.transform.position.y 
+				- (invaded.GetComponent<BoxCollider2D> ().size.y) / 2f
+				+ (gameObject.GetComponent<BoxCollider2D> ().size.y) / 2f;
+			// print(newPosition.y);
+			gameObject.transform.position = newPosition;
+			gameObject.GetComponent<PlayerController>().travelTime();
+		}
     }
 
     private void Animate()
